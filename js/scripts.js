@@ -1,19 +1,24 @@
 // scripts.js
 
 function getTriangleArea (a,h) {
-	var a = prompt('Podaj wartość podstawy trójkąta');
-	var h = prompt('Podaj wartość wysokości trójkąta');
+	//var a = prompt('Podaj wartość podstawy trójkąta');
+	//var h = prompt('Podaj wartość wysokości trójkąta');
 	if ((a <=0) || (h <=0 )) { 
 		alert ('Wprowadzona wartość jest mniejsza od zera - błąd !');
 		return 'Nieprawidłowe dane';
 	} else 
 		return ( a*h/2) ;
 }
-
-var triangle1Area = getTriangleArea();
+console.log(getTriangleArea(10,6));
+var triangle1Area = getTriangleArea(10,15);
 alert('Pole trójkąta to : '+ triangle1Area);
-//console.log(getTriangleArea());
 console.log(triangle1Area);
+var triangle2Area = getTriangleArea(8,12);
+alert('Pole trójkąta to : '+ triangle2Area);
+console.log(triangle2Area);
+var triangle3Area = getTriangleArea(4,7);
+alert('Pole trójkąta to : '+ triangle3Area);
+console.log(triangle3Area);
 
 /*var name = prompt('Enter your name'); /* deklaracja zmiennej o nazwie "name" ,przypisanie jej wartości którą zwraca funkacja prompt
 // alert('Hello, ' + name);
